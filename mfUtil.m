@@ -78,7 +78,7 @@ classdef mfUtil < handle
         
         function model = computeEstimates(lik, model, n)
             %
-            % resample all parameters' posterior distributions
+            % Resample all parameters based on their posterior probability
             %
             % INPUTS:
             %   lik - [S x 1] likelihood for each sample
@@ -128,7 +128,7 @@ classdef mfUtil < handle
         
         function [val, ci, samp] = computeEstimate(param, weights)
             %
-            % resample one parameter's posterior distribution
+            % Resample one parameter based on its posterior probability
             %
             % INPUTS:
             %   param - [S x 1] parameter samples
