@@ -18,7 +18,7 @@ if outcome = 1; a(c)  = a(c) + 1; if outcome = 0; b(c) = b(c) + 1;
 
 ### RL learning 
 
-$$ Q_{t+1}(c) = Q_t(c) + lrate (\text{outcome} - Q_t(c)) $$
+$$ Q_{t+1}(c) = Q_t(c) + \eta(\text{outcome} - Q_t(c)) $$
 
 ### Decision model (for either model)
 $$ \text{p}_t(c) = \frac{e^{\beta Q_t(c)}}{\sum_i{e^{\beta Q_t(i)}}} $$
