@@ -1,15 +1,15 @@
 # Hierarchical Model Fitting
 
 ### Bayesian inference
-$$ \begin{matrix} \text{if } \text{outcome}_t = 1 & \alpha _{t+1}(c) = \alpha_t(c) + 1 \\\ \text{if } \text{outcome}_t = 0 & \beta _{t+1}(c) = \beta_t(c) + 1 \end{matrix} $$ $$ Q_t(c) = \text{Beta}(\alpha_t(c),\beta_t(c)) = \frac{\alpha_t(c)}{\alpha_t(c)+\beta_t(c)} $$
+$$ \begin{matrix} \text{if } \text{outcome}_t = 1 & \alpha _{t+1}(c_t) = \alpha_t(c_t) + 1 \\\ \text{if } \text{outcome}_t = 0 & \beta _{t+1}(c_t) = \beta_t(c_t) + 1 \end{matrix} $$ $$ Q_t(c_t) = \text{Beta}(\alpha_t(c_t),\beta_t(c_t)) = \frac{\alpha_t(c_t)}{\alpha_t(c_t)+\beta_t(c_t)} $$
 
 
 ### Reinforcement learning 
 
-$$ Q_{t+1}(c) = Q_t(c) + \eta(\text{outcome}_t - Q_t(c)) $$
+$$ Q_{t+1}(c_t) = Q_t(c_t) + \eta(\text{outcome}_t - Q_t(c_t)) $$
 
 ### Decision model (for both models)
-$$ \text{p}_t(c) = \frac{e^{\beta Q_t(c)}}{\sum_i{e^{\beta Q_t(i)}}} $$
+$$ \text{p}_t(c_t) = \frac{e^{\beta Q_t(c_t)}}{\sum_i{e^{\beta Q_t(i)}}} $$
 
 ## Scripts
  - **demo.m**:   demonstrates fitting two models to simulated data
