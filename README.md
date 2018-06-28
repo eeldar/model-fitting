@@ -4,7 +4,7 @@
 Parameters: $ \phi $- prior expectation
 $$ A_0 = \phi $$
 $$ B_0 = \phi $$
-$$ \begin{matrix} \text{if } \text{outcome}_t = 1 & A_{t+1}(c_t) = A_t(c_t) + 1 \\\ \text{if } \text{outcome}_t = 0 & B_{t+1}(c_t) = B_t(c_t) + 1 \end{matrix} $$ 
+$$ \begin{matrix} \text{if } \text{outcome}_t = 1 & A _{t+1}(c_t) = A_t(c_t) + 1 \\\ \text{if } \text{outcome}_t = 0 & B _{t+1}(c_t) = B_t(c_t) + 1 \end{matrix} $$ 
 $$ Q_t(c_t) = \frac{A_t(c_t)}{\alpha_t(c_t)+B_t(c_t)} $$
 
 
