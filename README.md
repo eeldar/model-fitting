@@ -1,7 +1,7 @@
 # Hierarchical Model Fitting
 
 ### Bayesian inference
-$$ \begin{matrix} \text{if} \text{outcome}_t = 1 & \alpha(c) = \alpha(c) + 1 \\ \text{if} \text{outcome}_t = 0 & \beta(c) = \beta(c) + 1 \end{matrix} $$
+$$ \begin{matrix} \text{if } \text{outcome}_t = 1 & \alpha(c) = \alpha(c) + 1 \\\ \text{if } \text{outcome}_t = 0 & \beta(c) = \beta(c) + 1 \end{matrix} $$
                    q(c) = mean of beta distribution with parameters a(c) and b(c) = a(c)/(a(c)+b(c));
 
 ### Reinforcement learning 
