@@ -10,3 +10,11 @@
     - *.fit_prior*          Update the hyperparameters of the prior distribution to reflect the posterior
     - *.logsumexp*          Compute log(sum(exp(x),dim)) avoiding numerical underflow
     - *.randmultinomial*    Generate multinomial random numbers
+
+
+Bayesian learning: if outcome = 1; a(c)  = a(c) + 1; if outcome = 0; b(c) = b(c) + 1;
+                   q(c) = mean of beta distribution with parameters a(c) and b(c) = a(c)/(a(c)+b(c));
+
+RL learning: q(c) = q(c) + lrate x (outcome - q(c))
+
+Decision model: p(c) = exp(invtemp x q(c)) / sum_i(exp(invtemp x q(i)))
