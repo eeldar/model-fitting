@@ -2,14 +2,14 @@
 
 ### Bayesian inference
 Parameters: $ \phi $- prior expectation
-$$ A_0 = \phi $$
-$$ B_0 = \phi $$
+$$ \forall i A_0(i) = \phi, B_0(i) = \phi $$
 $$ \begin{matrix} \text{if } \text{outcome}_t = 1 & A _{t+1}(c_t) = A_t(c_t) + 1 \\\ \text{if } \text{outcome}_t = 0 & B _{t+1}(c_t) = B_t(c_t) + 1 \end{matrix} $$ 
 $$ Q_t(c_t) = \frac{A_t(c_t)}{A_t(c_t)+B_t(c_t)} $$
 
 
 ### Reinforcement learning 
 Parameters: $ \eta $- learning rate
+$$ \forall i Q_0(i) = 0, Q_0(i) = \phi $$
 $$ Q_{t+1}(c_t) = Q_t(c_t) + \eta(\text{outcome}_t - Q_t(c_t)) $$
 
 ### Decision model (for both models)
