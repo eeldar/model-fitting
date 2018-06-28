@@ -3,13 +3,12 @@
 ### Bayesian inference
 
  $$ \begin{matrix}
-
-if outcome = 1 && a(c)  = a(c) + 1 // 
+if outcome = 1 && a(c)  = a(c) + 1 \\
 if outcome = 0 && b(c) = b(c) + 1
 \end{matrix} $$
                    q(c) = mean of beta distribution with parameters a(c) and b(c) = a(c)/(a(c)+b(c));
 
-### RL learning 
+### Reinforcement learning 
 
 $$ Q_{t+1}(c) = Q_t(c) + \eta(\text{outcome} - Q_t(c)) $$
 
