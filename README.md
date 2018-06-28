@@ -2,10 +2,7 @@
 
 ### Bayesian inference
 $$ 
-\begin{vmatrix}
- &  & \\ 
- &  & 
-\end{vmatrix}
+\matrix{}
 $$
  $$ \begin{matrix}
 if outcome = 1 & a(c)  = a(c) + 1 \\
