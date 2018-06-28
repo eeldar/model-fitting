@@ -13,7 +13,7 @@ $$ \begin{matrix} \forall i & A_0(i) = \phi, B_0(i) = \phi \end{matrix} $$
 $$ \begin{matrix} \text{if } \text{outcome}_t = 1 & A _{t+1}(c_t) = A_t(c_t) + 1 \\\ \text{if } \text{outcome}_t = 0 & B _{t+1}(c_t) = B_t(c_t) + 1 \end{matrix} $$ 
 $$ Q_t(c_t) = \frac{A_t(c_t)}{A_t(c_t)+B_t(c_t)} $$
 
-### Decision model (for both models)
+### Choice probability (for both models)
 Parameters: $ \beta $ - inverse temperature
 $$ \text{p}(c_t) = \frac{e^{\beta Q_t(c_t)}}{\sum_i{e^{\beta Q_t(i)}}} $$
 
