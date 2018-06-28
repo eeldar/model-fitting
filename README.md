@@ -2,7 +2,7 @@
 
 ### Bayesian inference
 $$ \begin{matrix} \text{if } \text{outcome}_t = 1 & \alpha_{t+1}(c) = \alpha_t(c) + 1 \\\ \text{if } \text{outcome}_t = 0 & \beta_{t+1}(c) = \beta_t(c) + 1 \end{matrix} $$
-$$ Q_t(c) = \text{Beta}(\alpha_t(c),\beta_t(c)) = \frac{\alpha_t(c)}{\alpha_t(c)+\beta_t(c)} $$
+$$ Q_t(c) = \text{Beta}(\alpha(c),\beta_t(c)) = \frac{\alpha(c)}{\alpha(c)+\beta(c)} $$
 
 ### Reinforcement learning 
 
