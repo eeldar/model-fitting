@@ -18,3 +18,6 @@ Bayesian learning: if outcome = 1; a(c)  = a(c) + 1; if outcome = 0; b(c) = b(c)
 RL learning: q(c) = q(c) + lrate x (outcome - q(c))
 
 Decision model: p(c) = exp(invtemp x q(c)) / sum_i(exp(invtemp x q(i)))
+
+
+$ y = x^2 + 3 $
