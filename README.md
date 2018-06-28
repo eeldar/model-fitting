@@ -4,7 +4,7 @@ The code fits RL and Bayesian models to simulated data.
 
 ### Reinforcement learning 
 Parameters: $ \eta $ - learning rate
-$$ \begin{matrix} \forall i Q_0(i) = 0, Q_0(i) = 0 \end{matrix} $$
+$$ \begin{matrix} \forall i & Q_0(i) = 0 & Q_0(i) = 0 \end{matrix} $$
 $$ Q_{t+1}(c_t) = Q_t(c_t) + \eta(\text{outcome}_t - Q_t(c_t)) $$
 
 ### Bayesian inference
