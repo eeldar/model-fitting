@@ -9,7 +9,7 @@ $$ Q_t(c_t) = \frac{A_t(c_t)}{A_t(c_t)+B_t(c_t)} $$
 
 ### Reinforcement learning 
 Parameters: $ \eta $- learning rate
-$$ \forall i Q_0(i) = 0, Q_0(i) = \phi $$
+$$ \begin{matrix} \forall i Q_0(i) = 0, Q_0(i) = \phi \end{matrix} $$
 $$ Q_{t+1}(c_t) = Q_t(c_t) + \eta(\text{outcome}_t - Q_t(c_t)) $$
 
 ### Decision model (for both models)
