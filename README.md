@@ -15,7 +15,7 @@ $$ Q_t(c_t) = \frac{A_t(c_t)}{A_t(c_t)+B_t(c_t)} $$
 
 ### Decision model (for both models)
 Parameters: $ \beta $ - inverse temperature
-$$ \text{p}_t(c_t) = \frac{e^{\beta Q_t(c_t)}}{\sum_i{e^{\beta Q_t(i)}}} $$
+$$ \text{p}(c_t) = \frac{e^{\beta Q_t(c_t)}}{\sum_i{e^{\beta Q_t(i)}}} $$
 
 Legend: $ Q $ - expected value, $ c $ - choice, $ t $ - trial
 ## Scripts
