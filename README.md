@@ -1,12 +1,13 @@
 # Hierarchical Model Fitting
 
 ### Bayesian inference
-$$ \begin{matrix} if outcome = 1 & a(c)  = a(c) + 1 \\ if outcome = 0 & b(c) = b(c) + 1 \end{matrix} $$
+$$ \begin{matrix} if \text{outcome}_t = 1 & a(c)  = a(c) + 1 \\ 
+if \text{outcome}_t = 0 & b(c) = b(c) + 1 \end{matrix} $$
                    q(c) = mean of beta distribution with parameters a(c) and b(c) = a(c)/(a(c)+b(c));
 
 ### Reinforcement learning 
 
-$$ Q_{t+1}(c) = Q_t(c) + \eta(\text{outcome} - Q_t(c)) $$
+$$ Q_{t+1}(c) = Q_t(c) + \eta(\text{outcome}_t - Q_t(c)) $$
 
 ### Decision model (for either model)
 $$ \text{p}_t(c) = \frac{e^{\beta Q_t(c)}}{\sum_i{e^{\beta Q_t(i)}}} $$
