@@ -18,7 +18,7 @@ if outcome = 1; a(c)  = a(c) + 1; if outcome = 0; b(c) = b(c) + 1;
 
 ### RL learning 
 
-$$ Q_{t+1}(c) = Q_t(c) + lrate (\bold{outcome} - Q_t(c)) $$
+$$ Q_{t+1}(c) = Q_t(c) + lrate (\textnormal{outcome} - Q_t(c)) $$
 
 ### Decision model (for either model)
 $$ p_t(c) = exp(invtemp x Q_t(c)) / sum_i(exp(invtemp x Q_t(i))) $$
