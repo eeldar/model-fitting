@@ -6,10 +6,11 @@ $$ Q_t(c_t) = \frac{\alpha_t(c_t)}{\alpha_t(c_t)+\beta_t(c_t)} $$
 
 
 ### Reinforcement learning 
-
+Parameters: & \eta $- learning rate
 $$ Q_{t+1}(c_t) = Q_t(c_t) + \eta(\text{outcome}_t - Q_t(c_t)) $$
 
 ### Decision model (for both models)
+Parameters: & \beta $- inverse temperature
 $$ \text{p}_t(c_t) = \frac{e^{\beta Q_t(c_t)}}{\sum_i{e^{\beta Q_t(i)}}} $$
 
 ## Scripts
