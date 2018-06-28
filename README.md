@@ -2,13 +2,13 @@
 
 ### Bayesian inference
 $$ \begin{matrix} \text{if } \text{outcome}_t = 1 & \alpha(c) = \alpha(c) + 1 \\\ \text{if } \text{outcome}_t = 0 & \beta(c) = \beta(c) + 1 \end{matrix} $$
-                   q(c) = mean of beta distribution with parameters a(c) and b(c) = a(c)/(a(c)+b(c));
+&& Q_t(c) = \text{Beta}(\alpha(c),\beta(c)) = \frac{\alpha(c)}{\alpha(c)+\beta(c)} $$
 
 ### Reinforcement learning 
 
 $$ Q_{t+1}(c) = Q_t(c) + \eta(\text{outcome}_t - Q_t(c)) $$
 
-### Decision model (for either model)
+### Decision model (for both models)
 $$ \text{p}_t(c) = \frac{e^{\beta Q_t(c)}}{\sum_i{e^{\beta Q_t(i)}}} $$
 
 ## Scripts
