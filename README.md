@@ -2,7 +2,7 @@
 
 ### Bayesian inference
 Parameters: $ \phi $- prior expectation
-$$ \forall i A_0(i) = \phi, B_0(i) = \phi $$
+$$ \forall i {A_0(i) = \phi, B_0(i) = \phi} $$
 $$ \begin{matrix} \text{if } \text{outcome}_t = 1 & A _{t+1}(c_t) = A_t(c_t) + 1 \\\ \text{if } \text{outcome}_t = 0 & B _{t+1}(c_t) = B_t(c_t) + 1 \end{matrix} $$ 
 $$ Q_t(c_t) = \frac{A_t(c_t)}{A_t(c_t)+B_t(c_t)} $$
 
