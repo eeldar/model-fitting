@@ -2,10 +2,10 @@
 
 ### Bayesian inference
 
- $$ \begin{matrix}
+ $$ \begin
 if outcome = 1 & a(c)  = a(c) + 1 \\
 if outcome = 0 & b(c) = b(c) + 1
-\end{matrix} $$
+\end $$
                    q(c) = mean of beta distribution with parameters a(c) and b(c) = a(c)/(a(c)+b(c));
 
 ### Reinforcement learning 
