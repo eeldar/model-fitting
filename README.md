@@ -17,7 +17,7 @@ $$ Q_t(c_t) = \frac{A_t(c_t)}{A_t(c_t)+B_t(c_t)} $$
 Parameters: $ \beta $ - inverse temperature
 $$ \text{p}_t(c_t) = \frac{e^{\beta Q_t(c_t)}}{\sum_i{e^{\beta Q_t(i)}}} $$
 
-$ t $ - trial, $ c $ - choice, $ Q $ - expected value
+Legend: $ Q $ - expected value, $ c $ - choice, $ t $ - trial
 ## Scripts
  - **demo.m**:   demonstrates fitting the two models to simulated data
  - **simulate_data.m**:   simulate data from a reinforcement learning agent
