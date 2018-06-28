@@ -20,4 +20,5 @@ if outcome = 1; a(c)  = a(c) + 1; if outcome = 0; b(c) = b(c) + 1;
 
 $$ Q_{t+1}(c) = Q_t(c) + lrate (outcome - Q_t(c)) $$
 
-Decision model: p(c) = exp(invtemp x q(c)) / sum_i(exp(invtemp x q(i)))
+### Decision model (for either model)
+$$ p_t(c) = exp(invtemp x Q_t(c)) / sum_i(exp(invtemp x Q_t(i))) $$
