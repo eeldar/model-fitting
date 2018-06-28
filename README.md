@@ -18,6 +18,7 @@ Parameters: $ \beta $ - inverse temperature
 $$ \text{p}(c_t) = \frac{e^{\beta Q_t(c_t)}}{\sum_i{e^{\beta Q_t(i)}}} $$
 
 Legend: $ Q $ - expected value, $ c $ - choice, $ t $ - trial
+To see equations correctly install the following chrome extension: https://github.com/FlorianFranzen/KaTeXify
 ## Scripts
  - **demo.m**:   demonstrates fitting the two models to simulated data
  - **simulate_data.m**:   simulate data from a reinforcement learning agent
