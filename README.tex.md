@@ -2,12 +2,21 @@
 
 MATLAB code fitting RL and Bayesian models to simulated data.
 
-### Reinforcement learning 
+### Algorithm
+
+ - Define initial prior distribution for model parameters 
+ - Repeat until fit stops improving:
+   - Sample parameter values from prior distributions
+   - Compute likelihood of each sample
+   - Resample the parameter values using the likelihoods as weights 
+   - Fit prior distributions to the resampled values
+
+### Reinforcement learning model
 Parameters: $ \eta $ - learning rate
 $$ \begin{matrix} \forall i & Q_0(i) = 0 & Q_0(i) = 0 \end{matrix} $$
 $$ Q_{t+1}(c_t) = Q_t(c_t) + \eta(\text{outcome}_t - Q_t(c_t)) $$
 
-### Bayesian inference
+### Bayesian inference model
 Parameters: $ \phi $ - shape of prior distribution
 $$ \begin{matrix} \forall i & A_0(i) = \phi & B_0(i) = \phi \end{matrix} $$
 $$ \begin{matrix} \text{if } \text{outcome}_t = 1 & A _{t+1}(c_t) = A_t(c_t) + 1 \\\ \text{if } \text{outcome}_t = 0 & B _{t+1}(c_t) = B_t(c_t) + 1 \end{matrix} $$ 
