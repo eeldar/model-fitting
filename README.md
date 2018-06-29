@@ -7,7 +7,7 @@ MATLAB code fitting RL and Bayesian models to simulated data.
 Define model parameters' prior distributions <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/>, and repeat until mean likelihood stops increasing:
  1. Sample parameter values from  <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/>
  2. Compute likelihood <img src="/tex/767c519b405b6ea9a6d8f1b90116f3fa.svg?invert_in_darkmode&sanitize=true" align=middle width=66.62120024999999pt height=24.65753399999998pt/> for each sample 
- 3. Derive the parameters' posterior distributions <img src="/tex/48fafd28bdf4ed2c8405e5929f021866.svg?invert_in_darkmode&sanitize=true" align=middle width=96.71260829999999pt height=24.65753399999998pt/> by resampling the parameter values with likelihoods as weights
+ 3. Derive <img src="/tex/fc7bf9b8e27b47aec68825299f0df2ae.svg?invert_in_darkmode&sanitize=true" align=middle width=213.31087964999995pt height=24.65753399999998pt/>, by resampling the parameter values with likelihoods as weights
  4. Fit prior distributions to the resampled values: <img src="/tex/bfd6855949188dd9bccbaa0dabdff8c9.svg?invert_in_darkmode&sanitize=true" align=middle width=152.37461745pt height=24.65753399999998pt/>
 
 ### Reinforcement learning model
