@@ -4,10 +4,10 @@ MATLAB code fitting RL and Bayesian models to simulated data.
 
 ### Algorithm
 
-Define the model parameter's prior distribution $ \text{p}(\theta) $ and repeat until mean likelihood stops increasing:
+Define the model parameter's prior distribution $ \text{p}(\theta) $, and repeat until mean likelihood stops increasing:
  1. Sample parameter values from  $ \text{p}(\theta) $
  2. Compute likelihood $ \text{p}(\text{data}|\theta) $ for each sample 
- 3. Derive the posterior:  $ \text{p}(\theta)\text{p}(\text{data}|\theta) $ by resampling the parameter values with the likelihoods as weights
+ 3. Derive the posterior  $ \text{p}(\theta)\text{p}(\text{data}|\theta) $ by resampling the parameter values with the likelihoods as weights
  4. Fit prior distributions to the resampled values: $ \text{p}(\theta) \leftarrow \text{p}(\theta)\text{p}(\text{data}|\theta) $
 
 ### Reinforcement learning model
