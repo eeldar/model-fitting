@@ -6,10 +6,10 @@ MATLAB code fitting RL and Bayesian models to simulated data.
 
  1. Define initial prior distribution for model parameters, <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/>
  2. Repeat until mean likelihood stops increasing:
- 2.1. Sample parameter values from <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/>
- 2.2. Compute likelihood of each sample <img src="/tex/6836afaed46910c575185b4f974e2562.svg?invert_in_darkmode&sanitize=true" align=middle width=71.84952059999999pt height=24.65753399999998pt/>
- 2.3. Resample the parameter values using the likelihoods as weights, to derive the posterior:  <img src="/tex/32c9efe9c51224ce4f38de76e13de01b.svg?invert_in_darkmode&sanitize=true" align=middle width=101.94092864999999pt height=24.65753399999998pt/>
- 2.4. Fit prior distributions to the resampled values
+     1. Sample parameter values from $ \text{p}(\theta) $
+     2. Compute likelihood of each sample $ \text{p}(\text{data}|\theta) $
+     3. Resample the parameter values using the likelihoods as weights, to derive the posterior:  $ \text{p}(\theta)\text{p}(\text{data}|\theta) $
+     4. Fit prior distributions to the resampled values: $ \text{p}(\theta) \leftarrow \text{p}(\theta)\text{p}(\text{data}|\theta) $
 
 ### Reinforcement learning model
 Parameters: <img src="/tex/72f2c124690ade8ae09fa2ef022148c1.svg?invert_in_darkmode&sanitize=true" align=middle width=8.751954749999989pt height=14.15524440000002pt/> - learning rate
