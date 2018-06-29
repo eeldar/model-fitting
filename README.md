@@ -4,8 +4,7 @@ MATLAB code fitting RL and Bayesian models to simulated data.
 
 ### Algorithm
 
- - Define initial prior distribution for model parameters, <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/>
- - Repeat until mean likelihood stops increasing:
+Define the model parameter's prior distribution <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/> and repeat until mean likelihood stops increasing:
  1. Sample parameter values from  <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/>
  2. Compute likelihood of each sample <img src="/tex/767c519b405b6ea9a6d8f1b90116f3fa.svg?invert_in_darkmode&sanitize=true" align=middle width=66.62120024999999pt height=24.65753399999998pt/>
  3. Resample the parameter values using the likelihoods as weights, to derive the posterior:  <img src="/tex/48fafd28bdf4ed2c8405e5929f021866.svg?invert_in_darkmode&sanitize=true" align=middle width=96.71260829999999pt height=24.65753399999998pt/>
