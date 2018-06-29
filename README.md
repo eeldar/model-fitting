@@ -24,10 +24,10 @@ Legend: <img src="/tex/bb17b0e6d694fc6d731ee88afe1bae60.svg?invert_in_darkmode&s
  - **lik_rl.m**:          reinforcement learning likelihood function
  - **lik_bayes.m**:       Bayesian inference likelihood function
  - **mfUtil.m**:          various functions including the below
-    | *.randomP*           | Sample parameter values from prior distributions
-    | *.computeEstimates*  | Resample all parameters based on their posterior probability
-    | *.computeEstimate*   | Resample one parameter based on its posterior probability
-    | *.fit_prior*         | Update the hyperparameters of the prior distribution to reflect the posterior
-    | *.logsumexp*         | Compute log(sum(exp(x),dim)) avoiding numerical underflow
-    | *.randmultinomial*   | Generate multinomial random numbers
+    - *.randomP*           - Sample parameter values from prior distributions
+    - *.computeEstimates*  - Resample all parameters based on their posterior probability
+    - *.computeEstimate*   - Resample one parameter based on its posterior probability
+    - *.fit_prior*         - Update the hyperparameters of the prior distribution to reflect the posterior
+    - *.logsumexp*         - Compute log(sum(exp(x),dim)) avoiding numerical underflow
+    - *.randmultinomial*   - Generate multinomial random numbers
 
