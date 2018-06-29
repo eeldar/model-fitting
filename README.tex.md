@@ -4,9 +4,9 @@ MATLAB code fitting RL and Bayesian models to simulated data.
 
 ### Algorithm
 
- - Define initial prior distribution for model parameters 
- - Repeat until mean likelihood stops increasing:
-   - Sample parameter values from prior distributions
+ 1. Define initial prior distribution for model parameters, $ \text{p}(\theta) $
+ 2. Repeat until mean likelihood stops increasing:
+   - Sample parameter values from $ \text{p}(\theta) $
    - Compute likelihood of each sample
    - Resample the parameter values using the likelihoods as weights 
    - Fit prior distributions to the resampled values
