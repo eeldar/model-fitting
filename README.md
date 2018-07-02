@@ -1,6 +1,8 @@
 # Hierarchical Model Fitting
 
-MATLAB code fitting RL and Bayesian models to simulated data.
+MATLAB code for hierarchical model fitting using iterative importance sampling. 
+
+The fitting procedure is demonstrated by fitting RL and Bayesian models to simulated data.
 
 ### Fitting algorithm
 
