@@ -9,7 +9,7 @@ The fitting procedure is demonstrated by fitting RL and Bayesian models to simul
 Define model parameters' prior distributions <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/>, and repeat until mean likelihood stops increasing:
  1. Sample parameter values from  <img src="/tex/1f438323bcea53b1fbcfb5169074e970.svg?invert_in_darkmode&sanitize=true" align=middle width=30.091408049999988pt height=24.65753399999998pt/>
  2. Compute likelihood <img src="/tex/767c519b405b6ea9a6d8f1b90116f3fa.svg?invert_in_darkmode&sanitize=true" align=middle width=66.62120024999999pt height=24.65753399999998pt/> for each sample 
- 3. Derive <img src="/tex/c1b4b1392a4c7fb52634bd2bc4aa844d.svg?invert_in_darkmode&sanitize=true" align=middle width=185.25143999999997pt height=24.65753399999998pt/>, by resampling the parameter values with likelihoods as weights
+ 3. Derive <img src="/tex/3ee519ebf0c8539a54b7ab021d6585ee.svg?invert_in_darkmode&sanitize=true" align=middle width=185.25143999999997pt height=24.65753399999998pt/>, by resampling the parameter values with likelihoods as weights
  4. Fit prior distributions to the resampled values: <img src="/tex/b7aca50d6ea3ea454af1363b908ebe56.svg?invert_in_darkmode&sanitize=true" align=middle width=122.28320939999999pt height=24.65753399999998pt/>
 
 ### Reinforcement learning model
