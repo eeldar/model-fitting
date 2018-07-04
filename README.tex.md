@@ -10,7 +10,7 @@ Define model parameters' prior distributions $ \text{p}(\theta) $, and repeat un
  1. Sample parameter values from  $ \text{p}(\theta) $
  2. Compute likelihood $ \text{p}(\text{data}|\theta) $ for each sample 
  3. Derive $ \text{p}(\theta|\text{data}) = \text{p}(\theta)\text{p}(\text{data}|\theta) $, by resampling the parameter values with likelihoods as weights
- 4. Fit prior distributions to the resampled values: $ \text{p}(\theta) \leftarrow \text{p}(\theta)\text{p}(\text{data}|\theta) $
+ 4. Fit prior distributions to the resampled values: $ \text{p}(\theta) \leftarrow \text{p}(\theta|\text{data}) $
 
 ### Reinforcement learning model
 Parameters: $ \eta $ - learning rate
