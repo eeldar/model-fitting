@@ -17,7 +17,7 @@ function lik = lik_bayes(P,data)
     %
     % Eran Eldar, June 2018
     
-    S = size(P.invtemp,1); % number of parameters
+    S = size(P.invtemp,1); % number of samples
     lik = zeros(S,1); 
     Nc = max(unique(data.C)); % number of options
     
