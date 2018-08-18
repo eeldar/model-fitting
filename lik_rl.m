@@ -17,7 +17,7 @@ function lik = lik_rl(P,data)
     %
     % Eran Eldar, June 2018
     
-    S = size(P.invtemp,1); % number of parameters
+    S = size(P.invtemp,1); % number of samples
     Nc = max(unique(data.C)); % number of options
     q = zeros(S,Nc);  % initial values
     lik = zeros(S,1);
