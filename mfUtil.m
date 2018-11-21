@@ -166,13 +166,14 @@ classdef mfUtil < handle
             %   model - structure with the following fields:
             %               .spec - structure with the following fields:
             %                           .{parameter_name} - structure array with the following fields:       
-            %                                       .type - parameter distrbution type (e.g., 'norm', 'beta', 'gamma', etc.)
+            %                                   .type - parameter distrbution type (e.g., 'norm', 'beta', 'gamma', etc.)
             %               .fit - [N x 1] structure array with the following fields:
-            %                           .{parameter_name} - structure array with the following fields:       
-            %                                       .samp - [1 x 1000] uniform samples from the posterior
+            %                           .P - structure with the following fields:
+            %                                   .{parameter_name} - structure array with the following fields:       
+            %                                           .samp - [1 x 1000] uniform samples from the posterior
             %
             % OUTPUTS: 
-            %   model - structure with the inputted fields, with .spec fitted to .fit.{parameter_name}.samp
+            %   model - structure with the inputted fields, with .spec fitted to .fit.P.{parameter_name}.samp
             
             fnames = fieldnames(model.spec);
             for f = 1:length(fnames)
@@ -199,6 +200,27 @@ classdef mfUtil < handle
                 fprintf('%s - %s    old: %.2f %.2f      new: %.2f %.2f \n', model.name, fnames{f}, oldval(1), oldval(2), model.spec.(fnames{f}).val(1), model.spec.(fnames{f}).val(2))
             end
                         
+        end
+        
+        function P = fit2P(fit)
+            %
+            % organize the results of model fitting for one subject such that they can be fed back into the likelihiid function for simulation
+            % 
+            % USAGE: model = fitToModel(fit)
+            %
+            % INPUTS:
+            %   fit - structure with the following fields:
+            %               .P - structure with the following fields:
+            %                       .{parameter_name} - structure array with the following fields:       
+            %                               .val - fitted parameter value
+            % OUTPUTS: 
+            %   P - structure with the following fields:
+            %               .{parameter_name} - fitted parameter value
+            %
+            fnames = fieldnames(fit.P);
+            for f = 1:length(fnames)
+                P.(fnames{f}) = fit.P.(fnames{f}).val;
+            end
         end
     end
 end

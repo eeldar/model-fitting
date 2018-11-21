@@ -62,11 +62,26 @@ end
 fits = [model{1}.fit.P];
 invtemp = [fits.invtemp];
 lrate = [fits.lrate];
-figure; clf; subplot(1,2,1);
+figure; clf; subplot(1,3,1);
 scatter([P.invtemp],[invtemp.val]);
 title('Inverse temperature');
 xlabel('true value'); ylabel('fitted value');
-subplot(1,2,2);
+subplot(1,3,2);
 scatter([P.lrate],[lrate.val]);
 title('Learning rate');
 xlabel('true value'); ylabel('fitted value');
+
+%% simulate data from fitted model 1
+for n = 1:N
+    P = mfUtil.fit2P(model{1}.fit(n));
+    [~, latents] = model{1}.lik_func(P, data(n)); %simulate choices for each subject
+    sim_meanC(n,1) = mean(latents.sim_C); % average choice for simluated data
+    real_meanC(n,1) = mean(data(n).C); % average choice for real subject
+end
+subplot(1,3,3);
+scatter(sim_meanC, real_meanC);
+title('Simulated data');
+xlabel('real (i.e., original) average choice');
+ylabel('simulated average choice');
+
+

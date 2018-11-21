@@ -29,9 +29,9 @@ $$ \text{p}(c_t) = \frac{e^{\beta Q_t(c_t)}}{\sum_i{e^{\beta Q_t(i)}}} $$
 
 Legend: $ Q $ - expected value, $ c $ - choice, $ t $ - trial
 ## Scripts
- - **demo.m**:   demonstrates fitting the two models to simulated data
- - **simulate_data.m**:   simulate data from a reinforcement learning agent
- - **lik_rl.m**:          reinforcement learning likelihood function
+ - **demo.m**:   demonstrates fitting the two models to simulated data, then using one of the models to simulate new data and examine it against the original data
+ - **simulate_data.m**:   simulate original data from a reinforcement learning agent
+ - **lik_rl.m**:          reinforcement learning likelihood function (also simulates choices)
  - **lik_bayes.m**:       Bayesian inference likelihood function
  - **mfUtil.m**:          various functions including the below
     - *.randomP*           - Sample parameter values from prior distributions
@@ -40,4 +40,5 @@ Legend: $ Q $ - expected value, $ c $ - choice, $ t $ - trial
     - *.fit_prior*         - Update the hyperparameters of the prior distribution to reflect the posterior
     - *.logsumexp*         - Compute log(sum(exp(x),dim)) avoiding numerical underflow
     - *.randmultinomial*   - Generate multinomial random numbers
+    - *.fit2P*   		   - organize the results of model fitting for one subject such that they can be fed back into the likelihiid function for simulation 
 
