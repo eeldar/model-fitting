@@ -49,9 +49,9 @@ for m = 1:length(model)
 
         % compute goodness-of-fit measures 
         Nparams = 2*length(fieldnames(model{m}.spec)); % number of hyperparameters (assumes 2 hyperparameters per parameter)
-        Nsamples = sum([model{m}.fit.samples]); % total number of samples 
+        Ndatapoints = numel([data.C]); % total number of datapoints 
         model{m}.evidence = sum([model{m}.fit.evidence]); % total evidence
-        model{m}.bic = -2*model{m}.evidence + Nparams*log(Nsamples); % Bayesian Information Criterion
+        model{m}.bic = -2*model{m}.evidence + Nparams*log(Ndatapoints); % Bayesian Information Criterion
         improvement = oldbic - model{m}.bic; % compute improvement of fit
         fprintf('%s - %s    old: %.2f       new: %.2f      \n', model{m}.name, 'bic', oldbic, model{m}.bic)
     end
